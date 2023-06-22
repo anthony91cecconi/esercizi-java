@@ -40,6 +40,6 @@ public class Cellulare {
 
     public void azzeraChiamate(){
         this.numeroChiamate = 0;
-        System.out.println("chiamate azzerate");
+        System.out.println("chiamate azzerate ");
     }
 }
