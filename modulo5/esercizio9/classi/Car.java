@@ -30,4 +30,8 @@ public class Car {
         System.out.println("rifornimento riuscito");
         this.gas += gas;
     }
+
+    public String getTipoGas(){
+        return this.tipoDiGas;
+    }
 }

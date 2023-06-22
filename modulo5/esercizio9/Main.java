@@ -2,8 +2,9 @@ package modulo5.esercizio9;
 
 import java.util.Scanner;
 
-import modulo3.file.automobile.classi.Car;
-import modulo3.file.automobile.classi.DistributoreBenzina;
+import modulo5.esercizio9.classi.Car;
+import modulo5.esercizio9.classi.DistributoreBenzina;
+
 
 /*
       Esercizio 5.9 – CarFuel Testo:
@@ -14,7 +15,19 @@ import modulo3.file.automobile.classi.DistributoreBenzina;
     boolean usaBenzina() che restituisce se il carburante della macchina è benzina. boolean
     usaGasolio() che restituisce se il carburante della macchina è gasolio. double getSerbatoio()che
     restituisce il numero di litri di carburante rimanenti nel serbatoio. String getTipoDiCarburante()
-    che restituisce il tipo di carburante della macchina.
+    che restituisce il tipo di carburante della macchina...
+
+    Esercizio 5.10 – DistributoreCarFuel
+    Testo:
+    Modificare la classe DistributoreBenzina, assegnata nell’esercizio 3.3, in modo che il distributore
+    abbia due pompe, una di benzina ed una di gasolio. Ciascun tipo di carburante ha il suo costo per
+    litro. Conseguentemente, dovrete raddoppiare il metodo rifornisci: dovrete avere un metodo per
+    rifornire la benzina ed un metodo per rifornire il gasolio. Il metodo vendi deve essere modificato
+    nel seguente modo: public void vendi(double euro, CarFuel unaAutomobile). Tale metodo
+    rifornisce l'automobile specificata come parametro esplicito nel modo appropriato (benzina
+    oppure gasolio). Nel Tester create varie automobili e distributori. Fate compiere alcuni "viaggi" alle
+    automobili, e rifornitele di benzina in modo appropriato. Inoltre, rifornite le pompe di benzina in
+    caso di necessita'.
   */
 public class Main {
   static int controlInt(){
@@ -40,8 +53,8 @@ public class Main {
 
 
   public static void main(String[] args) {
-    auto = new Car(10);
-    benzinaio = new DistributoreBenzina(0);
+    auto = new Car(10, "benzina");
+    benzinaio = new DistributoreBenzina();
 
     menu();
   }
@@ -91,14 +104,46 @@ public class Main {
   }
 
   public static void rifornimentoBenzinaio(){
+    System.out.println("cosa vuoi rifornire? \n 1-benzina \n 2-GPL \n altro- torna al menu");
+    boolean tipo = true;
+
+    switch (scan.nextLine()) {
+      case "1":
+        tipo = true;
+        break;
+      case "2":
+        tipo = false;
+        break;
+    
+      default:
+        break;
+    }
+
     System.out.println("litri ");
-    benzinaio.rifornisci(controlDouble());
+    benzinaio.rifornisci(controlDouble(),tipo);
     menu();
   }
 
   public static void aggiornaPrezzo(){
+    System.out.println("quale prezzo vuoi aggiornare? \n 1-benzina \n 2-GPL \n altro- torna al menu");
+    boolean tipo = true;
+
+    switch (scan.nextLine()) {
+      case "1":
+        tipo = true;
+        break;
+      case "2":
+        tipo = false;
+        break;
+    
+      default:
+        break;
+    }
+
+
+
     System.out.println("quanto? ");
-    benzinaio.aggiorna(controlDouble());
+    benzinaio.aggiorna(controlDouble(),tipo);
     menu();
   }
 
