@@ -19,5 +19,7 @@ public class Main {
         String voto = scan.nextLine();
 
         System.out.println("il voto vale " + grade.convert(voto));
+
+        scan.close();
     }
 }

@@ -1,4 +1,4 @@
-package modulo3.file.banca.classi;
+package modulo3.file.esercizio1.classi;
 
 public class Banca {
     private String nomeConto;
@@ -12,6 +12,7 @@ public class Banca {
     }
 
     public void versa(int cifra){
+        System.out.println(interesse);
         this.saldo = this.saldo + cifra;
     }
 

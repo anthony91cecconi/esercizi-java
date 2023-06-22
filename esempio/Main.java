@@ -3,13 +3,15 @@ package esempio;
 import java.util.Scanner;
 
 public class Main {
-
+    public static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
         menu();
+
+        scan.close();
     }
 
     public static void menu(){
-        Scanner scan = new Scanner(System.in);
+        
         System.out.println("1. saluti");
 
         int scelta = scan.nextInt();

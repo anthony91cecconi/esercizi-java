@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 import modulo3.file.automobile.classi.Car;
 import modulo3.file.automobile.classi.DistributoreBenzina;
-import modulo3.file.cellulare.classi.Cellulare;
 
 /*
  * Esercizio 3.3 – Car Testo:

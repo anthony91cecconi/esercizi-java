@@ -1,7 +1,5 @@
 package modulo5.esercizio4.classi;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Grade {
 

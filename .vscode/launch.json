@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "modulo5.esercizio8.Main",
+            "projectName": "esercizi-java_4a7f13a4"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

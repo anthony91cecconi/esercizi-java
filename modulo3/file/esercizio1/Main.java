@@ -1,6 +1,6 @@
-package modulo3.file.banca;
+package modulo3.file.esercizio1;
 
-import modulo3.file.banca.classi.Banca;
+import modulo3.file.esercizio1.classi.Banca;
 
 /*
  * Esercizio 3.1 – BankAccount Testo:

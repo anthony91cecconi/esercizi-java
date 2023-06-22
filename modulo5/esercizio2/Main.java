@@ -5,7 +5,6 @@ package modulo5.esercizio2;
     stamparli in ordine crescente.
  */
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
