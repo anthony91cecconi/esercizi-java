@@ -8,20 +8,6 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
-            "mainClass": "modulo6.esercizio2.Main",
-            "projectName": "esercizi-java_4a7f13a4"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "modulo6.esercizio1.Main",
-            "projectName": "esercizi-java_4a7f13a4"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
             "mainClass": "modulo5.esercizio9.Main",
             "projectName": "esercizi-java_4a7f13a4"
         },
